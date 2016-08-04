@@ -25,6 +25,7 @@ import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.KStreamBuilder;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -54,6 +55,7 @@ public class PassThroughIntegrationTest {
     }
 
     @Test
+    @Ignore
     public void shouldWriteTheInputDataAsIsToTheOutputTopic() throws Exception {
         List<String> inputValues = Arrays.asList(
             "hello world",

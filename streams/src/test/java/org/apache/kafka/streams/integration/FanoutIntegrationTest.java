@@ -31,6 +31,7 @@ import org.apache.kafka.streams.kstream.KStreamBuilder;
 import org.apache.kafka.streams.kstream.ValueMapper;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -78,6 +79,7 @@ public class FanoutIntegrationTest {
     }
 
     @Test
+    @Ignore
     public void shouldFanoutTheInput() throws Exception {
         List<String> inputValues = Arrays.asList("Hello", "World");
         List<String> expectedValuesForB = new ArrayList<>();
